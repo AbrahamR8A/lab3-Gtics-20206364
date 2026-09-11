@@ -6,12 +6,12 @@ import java.util.Date;
 
 
 @Entity
-@Table(name="employee")
+@Table(name="employees")
 public class Employee {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Integer id;
+    private Integer employee_id;
 
     private String first_name;
 
@@ -34,11 +34,11 @@ public class Employee {
     private Integer department_id;
 
     public Integer getId() {
-        return id;
+        return employee_id;
     }
 
     public void setId(Integer id) {
-        this.id = id;
+        this.employee_id = id;
     }
 
     public String getFirst_name() {

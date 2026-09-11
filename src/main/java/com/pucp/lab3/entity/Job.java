@@ -2,6 +2,8 @@ package com.pucp.lab3.entity;
 
 import jakarta.persistence.*;
 
+@Entity
+@Table(name="jobs")
 public class Job {
 
     @Id
